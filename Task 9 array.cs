@@ -1,4 +1,4 @@
-﻿/*double[] arr = new double[6];
+﻿double[] arr = new double[6];
 
 Console.WriteLine("Give the value of a");
 arr[0] = Convert.ToDouble(Console.ReadLine());
@@ -39,4 +39,4 @@ if (arr[5] == 1)
 else if (arr[5] == 2)
 {
     Console.WriteLine($"There is only one x and it is {arr[3]}");
-}*/
+}
