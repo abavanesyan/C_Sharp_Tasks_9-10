@@ -1,4 +1,4 @@
-﻿/*Console.WriteLine("Give the value of a");
+Console.WriteLine("Give the value of a");
 double a = Convert.ToDouble(Console.ReadLine());
 Console.WriteLine("Give the value of b");
 double b = Convert.ToDouble(Console.ReadLine());
@@ -41,4 +41,4 @@ if (bl == 1)
 else if (bl == 2)
 {
     Console.WriteLine($"There is only one x and it is {x1}");
-}*/
+}
