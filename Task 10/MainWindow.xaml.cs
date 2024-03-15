@@ -20,7 +20,6 @@ namespace Task_10
             {
                 array[i] = new T();
             }
-
             return array;
         }
 
@@ -59,19 +58,16 @@ namespace Task_10
                 {
                     AgeInputBox.Text = "Invalid age";
                 }
-
             }
 
             else
             {
                 NameInputBox.Text = "No space left";
             }
-
         }
 
         private void Sort_Age_Button_Click(object sender, RoutedEventArgs e)
         {
-
             for (int z = 0; z < recordCount; z++)
                 for (int i = 0; i < recordCount - 1; i++)
                 {
@@ -82,14 +78,11 @@ namespace Task_10
                         Data[i + 1] = temp[0];
                     }
                 }
-
             PrintResult();
-
         }
 
         private void Sort_Name_Button_Click(object sender, RoutedEventArgs e)
         {
-
             for (int z = 0; z < recordCount; z++)
                 for (int i = 0; i < recordCount - 1; i++)
                 {
@@ -100,9 +93,7 @@ namespace Task_10
                         Data[i + 1] = temp[0];
                     }
                 }
-
             PrintResult();
-
         }
 
         private void Search_Age_Button_Click(object sender, RoutedEventArgs e)
@@ -123,7 +114,6 @@ namespace Task_10
             {
                 AgeInputBox.Text = "Invalid";
             }
-
         }
 
         private void Search_Name_Button_Click(object sender, RoutedEventArgs e)
@@ -144,12 +134,10 @@ namespace Task_10
             {
                 NameInputBox.Text = "No person";
             }
-
         }
 
         private void Delete_ID_Button_Click(object sender, RoutedEventArgs e)
         {
-
             if (int.TryParse(IDInputBox.Text, out int ID) && ID < recordCount)
             {
                 for (int i = ID; i < recordCount - 1; i++)
@@ -158,7 +146,6 @@ namespace Task_10
                     Data[i] = Data[i + 1];
                     Data[i + 1] = temp[0];
                 }
-
                 --recordCount;
                 PrintResult();
             }
@@ -168,6 +155,7 @@ namespace Task_10
             }
         }
     }
+    
     public class Person
     {
         public string Name { get; set; }
